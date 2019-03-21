@@ -58,7 +58,7 @@ java -jar ProductService-0.0.1-SNAPSHOT.jar
 ```
 The application will start to run
 
-### 6. Run the RESTful service
+### 6. Call the ProductService resources
 Use your favorite API Rest Client (SoapUI used during case study completion, download [here](https://www.soapui.org/downloads/latest-release.html))
 
 The service is configured to run locally at http://localhost:8080/products
