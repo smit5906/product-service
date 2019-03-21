@@ -9,7 +9,7 @@ Open a command prompt and enter the following command
 ```
 java -version
 ```
-If your java version is 1.8 then continue. Otherwise follow the instructions here to update.
+If your java version is 1.8 then continue. Otherwise follow the instructions [here](https://java.com/en/download/win10.jsp) to update.
 
 ### 2. Clone the project from Git.
 To install git, [click here.](https://git-scm.com/downloads)
