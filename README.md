@@ -1,6 +1,6 @@
 # myRetail RESTful service Case Assessment
 
-ProductService App is configured to run as a Spring Boot application in conjunction with a local MongoDB instance.
+The ProductService is a RESTful Spring Boot service that runs in conjunction with a local MongoDB instance. It's main functions are to accept a product id and to either return a product's name and pricing information, or update a product's information.
 
 ## To run the application
 
@@ -21,16 +21,16 @@ $ git clone https://github.com/smit5906/product-service.git
 This will install the repository in your current home folder
 
 ### 3. Install MongoDB
-If you don't have mongoDB installed, refer [here](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
+To intall MongoDB, [click here.](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
 
-Once installed, enter the following in your command prompt to start the server
+Once MongoDB is installed, traverse to the \bin folder where mongodb is installed
+
+```
+cd mongodb\bin
+```
+Then type the following
 ```
 mongod
-```
-
-Open up a new command prompt and type the following
-```
-mongo
 ```
 Once the server has started, type the following to create a new database
 ```
@@ -41,9 +41,9 @@ Type the following command to add a document in the database
 db.getCollection('Product').save({ "pid": 13860428, "title": "The Big Lebowski (Blu-ray)", "price": "13.49", "currencyCode": "USD" })
 ```
 ### 4. Use Maven to build executable
-Install Maven [here.](https://maven.apache.org/download.cgi)
+To install Maven, [click here.](https://maven.apache.org/download.cgi)
 
-Once maven is installed, build the ProductService application. (Make sure you are in the application folder such as /Users/(name)/product-service)
+Once maven is installed, build the ProductService application. (Make sure you are in the application folder such as \Users\(name)\product-service)
 ```
 mvn clean install -U
 ```
@@ -59,7 +59,7 @@ java -jar ProductService-0.0.1-SNAPSHOT.jar
 The application will start to run
 
 ### 6. Call the ProductService resources
-Use your favorite API Rest Client (SoapUI used during case study completion, download [here](https://www.soapui.org/downloads/latest-release.html))
+Use your favorite API Rest Client (SoapUI used during case study completion, to install, [click here](https://www.soapui.org/downloads/latest-release.html))
 
 The service is configured to run locally at http://localhost:8080/products
 
