@@ -62,6 +62,7 @@ The application will start to run
 Use your favorite API Rest Client (SoapUI used during case study completion, download [here](https://www.soapui.org/downloads/latest-release.html))
 
 The service is configured to run locally at http://localhost:8080/products
+
 A GET request to the /products/{id} resource gets price information from MongoDB and the product name from the redsky Target API, and then returns a JSON Response.
 ```
   GET   http://localhost:8080/products/13860428
